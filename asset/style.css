@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #1f1f1f;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 120rem;
+  min-height: 100vh;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+/* Scrolling Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3a3a3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.content {
+  max-width: 72rem;
+  padding: 0 2.4rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.content .side-bar {
+  height: 32rem;
+  background-color: #343434;
+  overflow-y: auto;
+}
+
+.content .side-bar .name {
+  width: 100%;
+  border: none;
+  outline: 0;
+  font-family: inherit;
+  padding: 1.2rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.content .side-bar .name.active {
+  background-color: #4dccbd;
+}
+
+.content .side-bar .name:hover {
+  background-color: #4dccbd;
+}
+
+.content .name-info {
+  background-color: #343434;
+  display: grid;
+  place-content: center;
+  padding: 0 2.4rem;
+  text-align: center;
+}
+
+.content .name-info .name {
+  color: #f9f9f9;
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.content .name-info .name-explain {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #dfdfdf;
+}
+
+@media (max-width: 425px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .content .side-bar {
+    height: auto;
+    display: flex;
+  }
+  .content .side-bar .name {
+    padding: 0 2.4rem;
+  }
+  .content .name-info {
+    padding: 2.4rem;
+  }
+}
