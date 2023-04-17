@@ -1,2 +1,2 @@
-<h1 style='text-align: center;'> أسماء الله الحسني </h1>
+<h1 align = "center"> أسماء الله الحسني </h1>
 
